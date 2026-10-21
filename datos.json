@@ -1,0 +1,249 @@
+{
+  "tallerInfo": {
+    "nombre": "AUTOPRO TALLER & REPUESTOS",
+    "nit": "900.123.456-7",
+    "direccion": "Calle Principal #45-12, Zona Industrial",
+    "telefono": "+57 311 234 5678",
+    "email": "contacto@autopro.com"
+  },
+  "clients": [
+    {
+      "id": "c1",
+      "name": "Carlos Mendoza",
+      "dni": "10987654",
+      "phone": "+57 300 123 4567",
+      "email": "carlos.mendoza@email.com",
+      "address": "Calle 45 # 12-34"
+    },
+    {
+      "id": "c2",
+      "name": "María Camila Restrepo",
+      "dni": "52431098",
+      "phone": "+57 311 987 6543",
+      "email": "maria.restrepo@email.com",
+      "address": "Carrera 10 # 8-15"
+    },
+    {
+      "id": "c3",
+      "name": "Andrés Felipe Arias",
+      "dni": "79812345",
+      "phone": "+57 315 222 3344",
+      "email": "andres.arias@email.com",
+      "address": "Av. Las Américas # 20-50"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup1",
+      "name": "Distribuidora Importadora Automotriz S.A.",
+      "nit": "800.998.112-1",
+      "phone": "+57 601 555 9988",
+      "email": "ventas@distriauto.com",
+      "contact": "Jorge Ramírez"
+    },
+    {
+      "id": "sup2",
+      "name": "Lubricantes & Filtros del Valle",
+      "nit": "900.334.118-4",
+      "phone": "+57 310 444 7788",
+      "email": "pedidos@lubrivalle.com",
+      "contact": "Martha Gómez"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "v1",
+      "clientId": "c1",
+      "plate": "XYZ-987",
+      "brand": "Chevrolet",
+      "model": "Tracker",
+      "year": "2021",
+      "color": "Negro",
+      "vin": "9BGKS4800M01234"
+    },
+    {
+      "id": "v2",
+      "clientId": "c2",
+      "plate": "KLO-456",
+      "brand": "Nissan",
+      "model": "Sentra",
+      "year": "2019",
+      "color": "Blanco",
+      "vin": "3N1AB7AP0KY1122"
+    },
+    {
+      "id": "v3",
+      "clientId": "c3",
+      "plate": "MZD-321",
+      "brand": "Mazda",
+      "model": "Mazda 3",
+      "year": "2020",
+      "color": "Rojo",
+      "vin": "JM1BN1V63014433"
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Juan Pérez",
+      "role": "Mecánico",
+      "phone": "+57 312 987 6543",
+      "email": "juan.mecanico@autopro.com",
+      "status": "Activo"
+    },
+    {
+      "id": "u2",
+      "name": "Gabriel Torres",
+      "role": "Mecánico",
+      "phone": "+57 301 555 1234",
+      "email": "gabriel.mecanico@autopro.com",
+      "status": "Activo"
+    },
+    {
+      "id": "u3",
+      "name": "Laura Sánchez",
+      "role": "Administrador",
+      "phone": "+57 300 000 1122",
+      "email": "admin@autopro.com",
+      "status": "Activo"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "p1",
+      "sku": "FLT-101",
+      "name": "Filtro de Aceite Sintético Premium",
+      "category": "Filtros",
+      "cost": 4.50,
+      "price": 12.00,
+      "stock": 18,
+      "minStock": 5
+    },
+    {
+      "id": "p2",
+      "sku": "FLT-202",
+      "name": "Filtro de Aire Motor Toyota/Honda",
+      "category": "Filtros",
+      "cost": 6.00,
+      "price": 18.50,
+      "stock": 3,
+      "minStock": 5
+    },
+    {
+      "id": "p3",
+      "sku": "FRN-001",
+      "name": "Pastillas de Freno Delanteras Cerámicas",
+      "category": "Frenos",
+      "cost": 18.00,
+      "price": 45.00,
+      "stock": 8,
+      "minStock": 4
+    },
+    {
+      "id": "p4",
+      "sku": "FRN-002",
+      "name": "Disco de Freno Ventilado 280mm",
+      "category": "Frenos",
+      "cost": 25.00,
+      "price": 62.00,
+      "stock": 2,
+      "minStock": 4
+    },
+    {
+      "id": "p5",
+      "sku": "MTR-301",
+      "name": "Bujía Iridio High Performance",
+      "category": "Motor",
+      "cost": 3.50,
+      "price": 9.00,
+      "stock": 24,
+      "minStock": 10
+    },
+    {
+      "id": "p6",
+      "sku": "LUB-501",
+      "name": "Aceite Sintético 5W-30 (Galón)",
+      "category": "Lubricantes",
+      "cost": 16.00,
+      "price": 34.00,
+      "stock": 12,
+      "minStock": 6
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-1001",
+      "date": "2026-10-18",
+      "clientId": "c1",
+      "vehicleId": "v1",
+      "mechanicId": "u1",
+      "notes": "Cambio de aceite y revisión general de frenos.",
+      "items": [
+        { "partId": "p1", "quantity": 1, "unitPrice": 12.00 },
+        { "partId": "p6", "quantity": 1, "unitPrice": 34.00 }
+      ],
+      "laborCost": 25.00,
+      "total": 71.00,
+      "status": "Entregado"
+    },
+    {
+      "id": "ORD-1002",
+      "date": "2026-10-19",
+      "clientId": "c2",
+      "vehicleId": "v2",
+      "mechanicId": "u2",
+      "notes": "Ruido al frenar en rueda delantera derecha.",
+      "items": [
+        { "partId": "p3", "quantity": 1, "unitPrice": 45.00 }
+      ],
+      "laborCost": 30.00,
+      "total": 75.00,
+      "status": "En Proceso"
+    }
+  ],
+  "posSales": [
+    {
+      "id": "POS-5001",
+      "date": "2026-10-20",
+      "clientId": "c3",
+      "items": [
+        { "partId": "p5", "quantity": 4, "unitPrice": 9.00 }
+      ],
+      "total": 36.00,
+      "paymentMethod": "Efectivo",
+      "amountPaid": 40.00,
+      "change": 4.00
+    }
+  ],
+  "purchases": [
+    {
+      "id": "COM-2001",
+      "date": "2026-10-15",
+      "supplierId": "sup1",
+      "items": [
+        { "partId": "p3", "quantity": 10, "costUnit": 18.00 },
+        { "partId": "p4", "quantity": 5, "costUnit": 25.00 }
+      ],
+      "total": 305.00,
+      "status": "Recibido"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "EXP-3001",
+      "date": "2026-10-01",
+      "concept": "Arriendo Local y Taller",
+      "category": "Arriendo",
+      "amount": 250.00,
+      "paymentMethod": "Transferencia"
+    },
+    {
+      "id": "EXP-3002",
+      "date": "2026-10-05",
+      "concept": "Energía Eléctrica y Agua",
+      "category": "Servicios Públicos",
+      "amount": 65.00,
+      "paymentMethod": "Efectivo"
+    }
+  ]
+}
